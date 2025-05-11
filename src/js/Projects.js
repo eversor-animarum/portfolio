@@ -20,7 +20,7 @@ export default function Projects(){
         setTimeout(() => {
             setChoice(newValue);
             setIsFadingOut(false);
-        }, 300); // Adjust the timeout duration as needed
+        }, 300); 
     };
     //creating the portfolio object
     const portfolio=[

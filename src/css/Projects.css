@@ -178,9 +178,14 @@
     }
 
   .yesBox {
-    padding: 1rem;
-    margin-top: 10px;
+    font-size:18px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 10px auto; 
     width:300px;
+    text-align :center;
+    justify-content: center;
   }
 
   .portfolio-img {
