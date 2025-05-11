@@ -1,0 +1,139 @@
+#experience {
+  min-height: 50vh;
+  max-width: 1000px;
+  margin:auto;
+  padding-top: 100px;
+  gap:2rem;
+  padding:2rem;
+}
+.experience-header{
+        font-family: "NTR", sans-serif;
+        font-size: 48px;
+        color: #ff9abb;
+        font-weight: semi-bold;
+        margin-top: 0;
+        text-align: start;
+}
+.experience-Box{
+   margin-top:20px;
+   font-size:21px;
+   font-family:'NTR', sans-serif !important;
+   color:#fde5ec;
+   min-height: '250px';
+}
+.experienceTabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-Box h6{
+    font-family: 'NTR', sans-serif;
+    font-size: 23px;
+    color: #f5eef0;
+    text-align: center;
+    margin-top: 0;
+}
+.experience-Box subtitle1{
+    font-size:15px !important;
+}
+.experience-tab-Box:hover{
+    color:#ff6d97;
+}
+
+  /* This controls how the words for the tab look like */
+  .MuiButtonBase-root {
+    outline: none !important;
+    color: #ffe6f4 !important;
+    font-size:16px;
+  }
+  .MuiButtonBase-root::after {
+    outline: none !important;
+    color: #f16db8 !important;
+  }
+  .MuiTab-root.Mui-selected {
+    color: #f16db8 !important;
+    border-right: 2px solid #f16db8; 
+  }
+  
+  .MuiButtonBase-root:hover {
+    outline: none !important;
+    color: #f16db8 !important;
+  }
+  .experience-Box ul{
+    list-style:none;
+    padding-left: 0;
+  }
+  .experience-Box li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+  }
+  .experience-Box li::before{
+    content:"❅";
+    position:absolute;
+    color:#f16db8;
+    left:0;
+    top:0;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  /*This is for the slideUp animation*/
+  .fade-in {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(40px); /* start lower */
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 0;
+      /*This ensure that it goes to the original page*/
+      transform: translateY(0);
+         opacity: 1; }
+  }
+/*This is for smaller screens*/  
+  @media only screen and (max-width: 600px) {
+    #experience {
+      padding-left: unset;
+      padding-right: unset;
+      max-width: fit-content;
+    }
+  
+    .experience-Box{
+        margin-top:22px;
+        font-size:20px;
+        font-family:'NTR', sans-serif;
+        color:#f5eef0;
+        justify-content: space-evenly;
+     }
+    .experience-tab {
+      height: unset !important;
+      flex-direction: column !important;
+    }
+  
+    .makeStyles-root-1 {
+      height: unset !important;
+      width: unset;
+      flex-direction: column;
+    }
+  
+    .experience-Box h6{
+      font-family: 'NTR', sans-serif;
+      font-size: 15px;
+      color: #f5eef0;
+      text-align: center;
+      margin-top: 0;
+  }
+  .experience-Box{
+    margin-top:20px;
+    font-size:13px;
+    font-family:'NTR', sans-serif !important;
+    color:#fde5ec;
+    justify-content: flex-end;
+ }
+  }
+  

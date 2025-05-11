@@ -1,0 +1,16 @@
+#credits{
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    min-height: auto;
+  }
+  
+  .credit-text {
+    font-family: "NTR", sans-serif;
+    color: #ecccd6;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  

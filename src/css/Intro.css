@@ -1,0 +1,131 @@
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 200px;
+    min-height: 100vh;
+    padding-bottom: 30px;
+  }
+.intro-text{
+  margin-top: 250px;
+  padding-bottom: -10px;
+}
+/*.intro-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  */
+ /*This is for the typewriter effect*/ 
+ .Typewriter {
+    color: #ccc3c6;
+    text-align: center;
+    font-size: 74px;
+    margin-top: 100px;
+    padding-top: 10px;
+  }
+  .Typewriter .Cursor--blinking {
+    color: #f16ec6;
+    padding-left: 4px;
+  }
+  
+  .intro-title {
+    font-family: "NTR", sans-serif;
+    font-size: 86px;
+    color: #ffaac7;
+    font-weight: semi-bold;
+  }
+  
+  .intro-subtitle {
+    margin-top: -38px;
+    font-family: "NTR", sans-serif;
+    color: #f5eef0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 48px;
+  }
+  
+  .intro-desc {
+    color: #ffeaf0 !important;
+    font-family: "NTR", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 50px;
+  }
+  
+  .intro-contact {
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: "NTR", sans-serif;
+    align-self: center;
+    padding: 20px 30px;
+    cursor: pointer;
+    border: 1px solid #f780a8;
+    border-radius: 10px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: background-color 0.3s ease-in-out;
+  }
+  /*To make the say hi box borders glow*/
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 3px #f780a8, 0 0 5px #f780a8, 0 0 10px #f780a8;
+      }
+      50% {
+        box-shadow: 0 0 5px #ff6eb4, 0 0 10px #ff6eb4, 0 0 20px #ff6eb4;
+      }
+      100% {
+        box-shadow: 0 0 3px #f780a8, 0 0 8px #f780a8, 0 0 10px #f780a8;
+      }
+    }
+    
+  .intro-contact:hover {
+    background-color: #f0c4d3;
+  }
+  
+  b {
+    font-size: 17px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #intro {
+      min-height: unset;
+      padding-left: unset;
+      padding-top: unset;
+      margin: 0;
+      align-items: center;
+    }
+  .intro-text {
+      margin-top: 400px;
+    }
+    .intro-title {
+      font-size: 46px;
+    }
+    .Typewriter {
+      font-size: 36px;
+    }
+  
+    .intro-subtitle {
+      margin: 0;
+      font-size: 30px;
+    }
+  
+    .intro-desc {
+      font-size: 18px;
+      max-width: unset;
+      padding-bottom: 40px;
+    }
+  
+    .intro-contact {
+      font-size: 16px;
+    }
+  }
+  

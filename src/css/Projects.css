@@ -1,0 +1,185 @@
+#projects{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin:auto;
+    padding-top: 100px;
+    gap:2rem;
+    padding:2rem;
+}
+.projects-header{
+    font-family: "NTR", sans-serif;
+        font-size: 48px;
+        color: #ff9abb;
+        font-weight: semi-bold;
+        margin-top: 0;
+        text-align: start;
+}
+.yesBox {
+  margin-top: 20px;
+  position: relative;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: primary;
+  overflow: hidden;
+  z-index: 1;
+}
+.yesBox .corner-br {
+  content: "";
+  display: block;
+}
+
+.yesBox .corner-bl {
+  bottom: 0;
+  left: 0;
+}
+.yesBox .corner-br {
+  top: 0;
+  right:0;
+}
+.corner {
+  position: absolute;
+  width: 359px;
+  height: 5px;
+  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
+  animation: animated-border 1.5s infinite ease-in-out;
+  z-index: 2;
+  border-radius: 3px;
+}
+/* Creating the animated border with pseudo-element */
+.yesBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right:-3px;
+  right: 0;
+  height:100%;
+  width:6px;
+  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
+  animation: pulse 2s ease infinite;
+  z-index: -2;
+  border-radius: 3px;
+}
+.yesBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
+  right: 0;
+  height:100%;
+  width:9px;
+  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
+  animation: pulse 2s ease infinite;
+  z-index: -2;
+  border-radius: 3px;
+}
+  .button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+  }
+  .sparkleButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 2px #ff9abb, 0 0 4px #ff9abb;
+  }
+  .sparkleButton {
+    position: relative;
+    padding: 2px 30px;
+    background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);;
+    color: #180329;
+    font-size: 20px;
+    border-radius: 20px;
+    gap:6rem;
+    transition: transform 0.2s ease;
+    font-family: 'NTR', sans-serif !important;
+    font-weight: bold !important;
+  }
+  .yesBox h6{
+    color:#f882d1;
+    font-size: 25px;
+    font-family: 'NTR',sans-serif !important;
+  }
+  .yesBox li{
+    color:#ffacd0;
+    list-style-type: none;
+    font-size: 18px;
+    margin-top:5px;
+    font-family: 'NTR',sans-serif !important;
+  }
+   
+  .noBox h6{
+    color:#ff9abb;
+    font-size:22px;
+    font-family: 'NTR',sans-serif !important;
+  }
+ 
+  .question-image {
+    width: 250px;
+    height:250px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    z-index:0;
+  }
+  .tab-question{
+    color:#fabbe9;
+    font-size:23px;
+  }
+.portfolio-img{
+  width:300px;
+  height:300px;
+  border-radius: 10px;
+  z-index:1;
+  animation:move 3s ease infinite;
+}
+@keyframes move{
+ 0% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+    100%{
+       transform: scale(1);
+      opacity: 1.2;
+    }
+}
+ 
+  .error-image{
+    width: 450px;
+    height:450px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+  }
+  
+@media only screen and (max-width: 600px) {
+    #projects {
+      padding-left: unset;
+      padding-right: unset;
+      max-width: fit-content;
+    }
+    .question-image {
+      width: 250px;
+      height:250px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      z-index:0;
+    }
+    .tab-question{
+      color:#f092d7;
+      font-size:23px;
+    }
+    .error-image{
+      width: 350px;
+      height:350px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+}

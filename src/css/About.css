@@ -1,0 +1,159 @@
+#about{
+    min-height:50vh;
+    margin:auto;
+    max-width:1000px;
+    padding-top: 25px;
+}
+
+.about-header{
+    display: flex;
+    justify-content: flex-start;
+    text-align: start;
+    padding-left: 300px;
+    margin-bottom:10px;
+    margin-top: 20px;
+}
+.about-title{
+    font-family: "NTR", sans-serif;
+    font-size: 80px;
+    color: #ffaac7;
+    font-weight: semi-bold;
+    margin-top: 0;
+}
+.about-desc{
+    font-family: "NTR", sans-serif;
+    color: #f5eef0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 26px;
+    margin-top: -36px;
+    justify-content: space-evenly;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+  }
+/*I might include an animation for this,when I do I'll utilize it
+.about-tech ul {
+    padding-top: 20px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+  }*/
+.about-image img {
+    max-width: 300px;
+    height: 250px;
+    width:250px;
+    border-radius: 10px;
+    align-items: end;
+    box-shadow: 6px 13px 23px -5px rgba(0, 0, 0, 0.46);
+    border: none;
+  }
+  .about-tech {
+    font-family: "NTR", sans-serif;
+    color:#f5eef0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 26px;
+    margin-top: -30px;
+    padding-top: -30px;
+    text-align: start;
+  }
+ .about-tech ul {
+  list-style:"♥";
+  font-size:23px;
+ }
+ .about-tech li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.about-tech ul ::marker{
+  animation:pulse 2s ease infinite;
+  color:#b91d51;
+}
+  @keyframes pulse {
+      0% {
+        box-shadow: 0 0 3px #e6799d, 0 0 5px #f780a8, 0 0 10px #f780a8;
+      }
+      50% {
+        box-shadow: 0 0 5px #ff6eb4, 0 0 10px #ff6eb4, 0 0 20px #ff6eb4;
+      }
+      100% {
+        box-shadow: 0 0 5px #d85782, 0 0 10px #f780a8, 0 0 15px #e7034f;
+      }
+    }
+ /*This is for the slideUp animation*/
+ .fade-in {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(40px); /* start lower */
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 0;
+    /*This ensure that it goes to the original page*/
+    transform: translateY(0);
+       opacity: 1; }
+}
+
+  
+  @media only screen and (max-width: 788px) {
+    #about {
+      min-height: unset;
+      padding-left: unset;
+      padding-top: unset;
+      padding-bottom: 20px;
+      margin-top: -120px;
+    }
+    .about-image img {
+      max-width: 200px;
+      margin-right: 10px;
+    }
+  }
+  .about-title{
+    font-size: 48px;
+    margin-left: -280px;
+  }
+  .about-desc{
+    font-size: 28px;
+    margin-top: -20px;
+  }
+  .about-image:hover {
+    transform: translateY(-7px);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #about {
+      height: unset;
+      padding-left: unset;
+      padding-right: unset;
+      padding-top: 30%;
+    }
+  
+    .about-desc {
+      font-size: 18px;
+      text-align: justify;
+    }
+  
+    .about-tech {
+      font-size: 17px;
+        margin-top: 0;
+    }
+  .tech-stack{
+    font-size:15px;
+  }
+    .about-image img {
+      display: none;
+    }
+  
+    .about-content {
+      display: unset;
+    }
+  }
+  
