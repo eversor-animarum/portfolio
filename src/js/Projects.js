@@ -80,7 +80,7 @@ return(
                         Click on the image to view the repo
                         </li>
                         <li>{portfolio[0].desc}</li>
-                        <li>Tech Stack: {portfolio[0].techStack}</li>
+                        <li className='tech-stack'>Tech Stack: {portfolio[0].techStack}</li>
                     </ul>
                     </div>
                 </Box>

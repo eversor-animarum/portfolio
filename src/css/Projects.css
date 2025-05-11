@@ -159,7 +159,7 @@
     }
   }
   
-@media only screen and (max-width: 600px) {
+  @media screen and (max-width: 768px) {
     #projects {
       padding-left: unset;
       padding-right: unset;
@@ -176,10 +176,36 @@
       color:#f092d7;
       font-size:23px;
     }
-    .error-image{
-      width: 350px;
-      height:350px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-    }
+
+  .yesBox {
+    padding: 1rem;
+    margin-top: 10px;
+    width:300px;
+  }
+
+  .portfolio-img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .question-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 20px auto;
+  }
+
+  .projects-header {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
+
