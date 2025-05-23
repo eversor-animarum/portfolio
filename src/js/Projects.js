@@ -88,7 +88,7 @@ return(
              borderRadius: '16px',
           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
           <CardMedia 
-          component="portfolio-img"
+          component="img"
           alt="portfolio"
           image={portfolio[0].img}
           className='portfolio-img' />
