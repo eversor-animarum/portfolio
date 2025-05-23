@@ -14,64 +14,7 @@
         margin-top: 0;
         text-align: start;
 }
-.yesBox {
-  margin-top: 20px;
-  position: relative;
-  border-radius: 10px;
-  padding: 2rem;
-  background-color: primary;
-  overflow: hidden;
-  z-index: 1;
-}
-.yesBox .corner-br {
-  content: "";
-  display: block;
-}
 
-.yesBox .corner-bl {
-  bottom: 0;
-  left: 0;
-}
-.yesBox .corner-br {
-  top: 0;
-  right:0;
-}
-.corner {
-  position: absolute;
-  width: 359px;
-  height: 5px;
-  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
-  animation: animated-border 1.5s infinite ease-in-out;
-  z-index: 2;
-  border-radius: 3px;
-}
-/* Creating the animated border with pseudo-element */
-.yesBox::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right:-3px;
-  right: 0;
-  height:100%;
-  width:6px;
-  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
-  animation: pulse 2s ease infinite;
-  z-index: -2;
-  border-radius: 3px;
-}
-.yesBox::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -3px;
-  right: 0;
-  height:100%;
-  width:9px;
-  background: linear-gradient(270deg, #ff9abb, #ff9abb, #ff81ea);
-  animation: pulse 2s ease infinite;
-  z-index: -2;
-  border-radius: 3px;
-}
   .button-group{
     display: flex;
     justify-content: center;
@@ -94,19 +37,6 @@
     font-family: 'NTR', sans-serif !important;
     font-weight: bold !important;
   }
-  .yesBox h6{
-    color:#f882d1;
-    font-size: 25px;
-    font-family: 'NTR',sans-serif !important;
-  }
-  .yesBox li{
-    color:#ffacd0;
-    list-style-type: none;
-    font-size: 18px;
-    margin-top:5px;
-    font-family: 'NTR',sans-serif !important;
-  }
-   
   .noBox h6{
     color:#ff9abb;
     font-size:22px;
@@ -124,13 +54,58 @@
     color:#fabbe9;
     font-size:23px;
   }
-.portfolio-img{
-  width:300px;
+  /*this is for the project cards section*/
+  .project-card{
+    width: 420px;
+    max-width: 550px;
+    height: auto;
+    margin: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(59, 31, 50, 0.13);
+    transition: transform 0.3s ease;
+    background-color: #12121f !important;
+    z-index:-1;
+  }
+  .portfolio-img{
+  width:320px;
   height:300px;
+  margin-left: 12px;
   border-radius: 10px;
+ align-items: center;
   z-index:1;
-  animation:move 3s ease infinite;
+  margin-top: 3%;
 }
+.project-title{
+  font-family: "NTR", sans-serif !important;
+  font-size: 25px !important;
+  color: #f83d7c;
+  font-weight: semi-bold;
+  margin-top: 5px;
+  text-align: start;
+}
+.folder-icon{
+  margin-left:5px;
+}
+.tech-stack{
+  font-family: "NTR", sans-serif !important;
+  font-size: 20px !important;
+  color: #f83d7c;
+  font-weight: semi-bold;
+  margin-top: 0;
+  text-align: start;
+}
+ .project-card h6{
+    color:#f187aa;
+    font-size:21px;
+    font-family: 'NTR',sans-serif !important;
+    font-weight: semi-bold;
+  }
+  .stars{
+    margin-left:2px;
+    margin-top:6px;
+  }
 @keyframes move{
  0% {
       transform: scale(0.8);
@@ -177,17 +152,6 @@
       font-size:23px;
     }
 
-  .yesBox {
-    font-size:18px;
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    margin-top: 10px auto; 
-    width:300px;
-    text-align :center;
-    justify-content: center;
-  }
-
   .portfolio-img {
     width: 100%;
     max-width: 280px;
@@ -212,5 +176,24 @@
     flex-direction: column;
     gap: 15px;
   }
+  
+  .project-card{
+    width: 250px;
+    max-width: 250px;
+    height: auto;
+    margin: left;
+  }
+  .project-title{
+  font-family: "NTR", sans-serif !important;
+  font-size: 18px !important;
+  color: #f83d7c;
+  font-weight: semi-bold;
+  margin-top: 0;
+  text-align: start;
+}
+.folder-icon{
+  margin-left:5px;
+}
+
 }
 
