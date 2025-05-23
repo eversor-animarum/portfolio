@@ -69,10 +69,11 @@
     z-index:-1;
   }
   .portfolio-img{
-  width:320px;
+  width:330px !important;
+  max-width:fit-content;
   height:300px;
-  margin-left: 12px;
   border-radius: 10px;
+  margin-left:7px;
  align-items: center;
   z-index:1;
   margin-top: 3%;
